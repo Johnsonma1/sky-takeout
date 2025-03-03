@@ -1,0 +1,24 @@
+sky:
+  wechat:
+    #微信登录：小程序id，小程序密钥
+    #appid: wx7d4181700bc1a9a9
+    #secret: a7324db808993a632976e3f0335afb2a
+
+    #微信小程序信息
+    appid: wxffb3637a228223b8
+    secret: 84311df9199ecacdf4f12d27b6b9522d
+
+    #微信支付信息
+    mchid: 1561414331
+    mchSerialNo: 4B3B3DC35414AD50B1B755BAF8DE9CC7CF407606
+    apiV3Key: CZBK51236435wxpay435434323FFDuv3
+    privateKeyFilePath: D:\apiclient_key.pem
+    weChatPayCertFilePath: D:\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
+    notifyUrl: https://100e59da.cpolar.io/notify/paySuccess
+    refundNotifyUrl: https://100e59da.cpolar.io/notify/refundSuccess
+
+  #百度地图
+  shop:
+    address: 湖北省武汉市黄陂区青龙地铁站
+  baidu:
+    ak: vWkH7pX8Q8UGRnGIcqwXb31fDYPmqnS6
