@@ -8,11 +8,15 @@ spring:
     allow-circular-references: true
   datasource:
     druid:
-      driver-class-name: com.mysql.cj.jdbc.Driver
-      url: jdbc:mysql://localhost:3306/sky_take_out?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
-      username: root
-      password: 123456
-
+      driver-class-name: ${sky.datasource.driver-name}
+      url: jdbc:mysql://${sky.datasource.host}:${sky.datasource.port}/${sky.datasource.database}?serverTimezone=Asia/Shanghai
+      username: ${sky.datasource.username}
+      password: ${sky.datasource.password}
+  redis:
+    host: ${sky.redis.host}
+    port: ${sky.redis.port}
+    password: ${sky.redis.password}
+    database: ${sky.redis.database}
 
 mybatis-plus:
   #mapper配置文件
@@ -32,3 +36,33 @@ logging:
         mapper: debug
         service: info
         controller: info
+
+sky:
+  jwt:
+    # ??jwt??????????
+    admin-secret-key: itcast
+    # jwt有效时间
+    admin-ttl: 7200000
+    # 令牌名字，令牌存放在请求头中，通过令牌名字获取请求头中的鹰牌
+    admin-token-name: token
+    # 服务器私钥
+    user-secret-key: itheima
+    # 生效时间
+    user-ttl: 7200000
+    user-token-name: authentication
+    alioss:
+      endpoint: ${sky.alioss.endpoint}
+      access-key-id: ${sky.alioss.access-key-id}
+      access-key-secret: ${sky.alioss.access-key-secret}
+      bucket-name: ${sky.alioss.bucket-name}
+      upload-path: ${sky.alioss.upload-path}
+    wechat:
+      appid: ${sky.wechat.appid}
+      secret: ${sky.wechat.secret}
+    shop:
+      address: ??????????10?
+    baidu:
+      ak: your-ak
+    excel:
+      filePath: ${sky.excel.filePath}
+      sheet: ${sky.excel.sheet}

@@ -15,6 +15,7 @@ import java.lang.annotation.Target;
 @Target({ElementType.METHOD}) //注解添加的位置：方法上
 public @interface AutoFill {
 
+
     OperationType value(); //操作的类型，枚举类
 
 }

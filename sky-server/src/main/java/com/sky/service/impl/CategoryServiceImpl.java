@@ -1,5 +1,7 @@
 package com.sky.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.sky.entity.Category;
 import com.sky.mapper.CategoryMapper;
@@ -15,5 +17,6 @@ import org.springframework.stereotype.Service;
 public class CategoryServiceImpl
         extends ServiceImpl<CategoryMapper, Category>
         implements CategoryService {
+
 
 }

@@ -4,15 +4,21 @@ import com.aliyun.oss.ClientException;
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;
 import com.aliyun.oss.OSSException;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.ByteArrayInputStream;
 
+@Data
+@AllArgsConstructor
+@Slf4j
 public class AliOssUtil {
+    private static final String endpoint = "oss-cn-shenzhen.aliyuncs.com";
+    private static final String accessKeyId = "LTAI5t8a8nzb5HypkMHxWWeC";
+    private static final String accessKeySecret = "3KchD3G4MLKkNiB3ns4Ef6mWFDI16z";
+    private static final String bucketName = "sky-take-out-13456";
 
-    private static final String endpoint = "oss-cn-beijing.aliyuncs.com";
-    private static final String accessKeyId = "LTAI5tMKkdcawpzNC21Tau8H";
-    private static final String accessKeySecret = "3ANI9Ek9v5BDCoyxP7NWBXyKRcboAm";
-    private static final String bucketName = "sky-take-out-oss-1";
 
     /**
      * 文件上传
