@@ -9,7 +9,7 @@ sky:
   alioss:
     endpoint: oss-cn-shenzhen.aliyuncs.com
     access-key-id: LTAI5t8a8nzb5HypkMHxWWeC
-    access-key-secret: 3KchD3G4MLKkNiB3ns4Ef6mWFDI16z
+    access-key-secret:=
     bucket-name: sky-take-out-13456
   redis:
     host: localhost
