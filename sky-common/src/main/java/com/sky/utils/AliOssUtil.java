@@ -16,7 +16,7 @@ import java.io.ByteArrayInputStream;
 public class AliOssUtil {
     private static final String endpoint = "oss-cn-shenzhen.aliyuncs.com";
     private static final String accessKeyId = "LTAI5t8a8nzb5HypkMHxWWeC";
-    private static final String accessKeySecret = "3KchD3G4MLKkNiB3ns4Ef6mWFDI16z";
+    private static final String accessKeySecret = "null";
     private static final String bucketName = "sky-take-out-13456";
 
 
